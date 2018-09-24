@@ -1,0 +1,45 @@
+{
+  "name": "odf-node",
+  "version": "1.0.0",
+  "description": "node tool for work with opendocument formats",
+  "main": "src/index.js",
+  "keywords": [
+    "node",
+    "opendocument",
+    "odf",
+    "odt"
+  ],
+  "author": "gabrycaos <gabriele.falasca.89@gmail.com>",
+  "license": "GPL-3.0",
+  "scripts": {
+    "start": "babel-node index.js --presets es2015,stage-3",
+    "start-inspect": "babel-node --inspect index.js --presets es2015,stage-3",
+    "test": "npm run test-watch",
+    "test-watch": "mocha --require babel-core/register -w",
+    "test-single": "mocha --require babel-core/register"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.11",
+    "archiver": "^3.0.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "chai-dom": "^1.7.0",
+    "npm": "^6.0.0",
+    "pipette": "^0.9.3",
+    "prompt": "^1.0.0",
+    "pug": "^2.0.3",
+    "unzip-stream": "^0.3.0",
+    "unzipper": "^0.9.3",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "colors": "^1.2.1",
+    "mocha": "^5.1.1",
+    "nock": "^9.2.5"
+  }
+}
