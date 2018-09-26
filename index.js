@@ -16,6 +16,7 @@ archive.pipe(odt);
 
 console.log(Logo());
 console.log(`${'LIBREOFFICE'.green} conference 2018`);
+console.log('---');
 
 zip.getEntries().map(entry => {
   console.log(`Parsing ${entry.entryName}...`.green);
